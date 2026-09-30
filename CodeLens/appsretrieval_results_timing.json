@@ -1,0 +1,20 @@
+{
+  "mode": "hybrid",
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension": 384,
+    "parameters": 22713216,
+    "max_tokens": 256
+  },
+  "mteb_test_split": "test",
+  "total_wall_seconds": 1733.1927988000098,
+  "query_search_component_p50_ms": 15.003499982412905,
+  "query_search_component_p95_ms": 19.540120020974427,
+  "query_search_component_queries": 3765,
+  "initialization_wall_seconds": 10.804798299970571,
+  "model_load_seconds": 0.6977603000123054,
+  "corpus_encode_wall_seconds": 899.4817694000085,
+  "query_encode_wall_seconds": 751.3045160999754,
+  "documents_encoded": 10622,
+  "queries_encoded": 10961
+}

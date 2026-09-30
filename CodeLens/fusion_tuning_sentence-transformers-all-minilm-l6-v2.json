@@ -1,0 +1,1432 @@
+{
+  "dataset": "CoIR-Retrieval/apps",
+  "dataset_revision": "f22508f96b7a36c2415181ed8bb76f76e04ae2d5",
+  "source_split": "train",
+  "split_method": "stable SHA-256 ordering stratified by query language",
+  "seed": 20260927,
+  "holdout_fraction": 0.2,
+  "validation_queries": 500,
+  "train_pairs": 500,
+  "validation_documents": 1500,
+  "query_limit": 500,
+  "document_limit": 1500,
+  "encoder": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension": 384,
+    "parameters": 22713216,
+    "max_tokens": 256
+  },
+  "document_encode_seconds": 147.80998040002305,
+  "query_encode_seconds": 59.528851399954874,
+  "current_equal_rrf": {
+    "config": {
+      "strategy": "rrf",
+      "rrf_k": 60,
+      "bm25_weight": 0.5,
+      "semantic_weight": 0.5,
+      "semantic_cutoff": null
+    },
+    "ndcg_at_10": 0.5361365664837713,
+    "mrr_at_10": 0.5078063492063492
+  },
+  "best_config": {
+    "config": {
+      "strategy": "minmax",
+      "rrf_k": null,
+      "bm25_weight": 0.25,
+      "semantic_weight": 0.75,
+      "semantic_cutoff": null
+    },
+    "ndcg_at_10": 0.5529247265966876,
+    "mrr_at_10": 0.5276174603174603
+  },
+  "configs_evaluated": 126,
+  "grid": [
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5334682680984598,
+      "mrr_at_10": 0.506281746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5334682680984598,
+      "mrr_at_10": 0.506281746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5334682680984598,
+      "mrr_at_10": 0.506281746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5334682680984598,
+      "mrr_at_10": 0.506281746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5334682680984598,
+      "mrr_at_10": 0.506281746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5334682680984598,
+      "mrr_at_10": 0.506281746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5344063467154232,
+      "mrr_at_10": 0.5075150793650794
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5368111155700908,
+      "mrr_at_10": 0.5123007936507936
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 10,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.4217659896036405,
+      "mrr_at_10": 0.38838730158730156
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5422415682431337,
+      "mrr_at_10": 0.516154761904762
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5404963898692404,
+      "mrr_at_10": 0.5134531746031746
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 20,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.4422090631040035,
+      "mrr_at_10": 0.41544047619047614
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.544848798935583,
+      "mrr_at_10": 0.5182738095238095
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.539953432177936,
+      "mrr_at_10": 0.5116587301587301
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 40,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.4665080599812556,
+      "mrr_at_10": 0.44342380952380955
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5456124474958842,
+      "mrr_at_10": 0.5187674603174602
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5361365664837713,
+      "mrr_at_10": 0.5078063492063492
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 60,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.4775705178645805,
+      "mrr_at_10": 0.4521992063492063
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5463147967993054,
+      "mrr_at_10": 0.5172920634920636
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5345715796615004,
+      "mrr_at_10": 0.5058285714285714
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "rrf",
+        "rrf_k": 100,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.48934860274520825,
+      "mrr_at_10": 0.45977142857142855
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.25,
+        "semantic_weight": 0.75,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.5529247265966876,
+      "mrr_at_10": 0.5276174603174603
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.5,
+        "semantic_weight": 0.5,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.48373746916618393,
+      "mrr_at_10": 0.44690555555555556
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": null
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.0
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.1
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.2
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.3
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.4
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    },
+    {
+      "config": {
+        "strategy": "minmax",
+        "rrf_k": null,
+        "bm25_weight": 0.75,
+        "semantic_weight": 0.25,
+        "semantic_cutoff": 0.5
+      },
+      "ndcg_at_10": 0.3779180618625263,
+      "mrr_at_10": 0.33350079365079366
+    }
+  ]
+}

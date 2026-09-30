@@ -1,0 +1,17 @@
+{
+  "mode": "dense",
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension": 384,
+    "parameters": 22713216,
+    "max_tokens": 256
+  },
+  "mteb_test_split": "test",
+  "total_wall_seconds": 588.3420481999638,
+  "initialization_wall_seconds": 0.09471139998640865,
+  "model_load_seconds": 0.09178459999384359,
+  "corpus_encode_wall_seconds": 319.78016989998287,
+  "query_encode_wall_seconds": 239.98233850003453,
+  "documents_encoded": 8765,
+  "queries_encoded": 3765
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "hybrid",
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension": 384,
+    "parameters": 22713216,
+    "max_tokens": 256
+  },
+  "mteb_test_split": "test",
+  "total_wall_seconds": 180.7934693999705,
+  "initialization_wall_seconds": 0.0012906999909318984,
+  "model_load_seconds": 0.08274209999945015,
+  "corpus_encode_wall_seconds": 405.00687939999625,
+  "query_encode_wall_seconds": 1087.054038900009,
+  "documents_encoded": 10622,
+  "queries_encoded": 10961
+}

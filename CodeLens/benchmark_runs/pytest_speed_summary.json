@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/pytest-dev/pytest",
+  "revision": "f9554ee56d264da285f3951ebfdf6f1d59ba4077",
+  "parent": "6a9ba0f02f827a54cff6ab4da0dddecd65444ff6",
+  "indexed_blocks": 7830,
+  "python_files": 267,
+  "initial_index_seconds": 429.57,
+  "changed_paths": 3,
+  "python_files_read_on_changed_revision": 2,
+  "changed_revision_index_seconds": 1.49,
+  "changed_revision_embedding_cache_hits": 7830,
+  "changed_revision_embedding_cache_misses": 0,
+  "warm_query_count": 10,
+  "repetitions": 5,
+  "warm_query_p50_ms": 145.4,
+  "warm_query_p95_ms": 366.2,
+  "platform": "Windows 11",
+  "python": "3.12.14",
+  "cpu_only": true,
+  "warm_query_excludes": "model first-load/download and index construction"
+}

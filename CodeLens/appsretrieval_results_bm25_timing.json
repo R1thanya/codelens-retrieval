@@ -1,0 +1,17 @@
+{
+  "mode": "bm25",
+  "model": {
+    "model": "CodeLens-BM25-control",
+    "dimension": 0,
+    "parameters": 0,
+    "max_tokens": 0
+  },
+  "mteb_test_split": "test",
+  "total_wall_seconds": 32.507517700025346,
+  "initialization_wall_seconds": 0.00013719999697059393,
+  "model_load_seconds": 0.0,
+  "corpus_encode_wall_seconds": 0.0,
+  "query_encode_wall_seconds": 0.0,
+  "documents_encoded": 0,
+  "queries_encoded": 0
+}
